@@ -33,6 +33,27 @@ This script can translate phrases from English to any language supported by the 
    ```bash
    python translate-azure.py 
    ```
+6. **Answers:**
+   ```bash
+      [
+      {
+         "translations": [
+               {
+                  "text": "La traduction n’est pas seulement une question de mots, il s’agit de transmettre le vrai sens à travers les langues !",
+                  "to": "fr"
+               },
+               {
+                  "text": "Beim Übersetzen geht es nicht nur um Worte, sondern darum, die wahre Bedeutung sprachübergreifend zu vermitteln!",
+                  "to": "de"
+               },
+               {
+                  "text": "A tradução não é apenas sobre palavras, é sobre transmitir o verdadeiro significado através das línguas!",
+                  "to": "pt"
+               }
+         ]
+      }
+   ]
+   ```
 ## 📦Dependencies:
 - requests
 - python-dotenv
