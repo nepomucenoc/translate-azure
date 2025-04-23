@@ -1,10 +1,11 @@
 # 🌍 Translate Azure
 
-A simple project that translates text using the Microsoft Translator Text API (Azure Cognitive Services).
+A simple, yet powerful script that leverages the Microsoft Translator Text API (Azure Cognitive Services) to translate text from English to multiple languages. This tool is designed to be flexible and easy to use, with the goal of automating translation tasks seamlessly.
+
 
 ## ✨ Features
 
-This script translates phrases from English to other languages using the Azure API. You can configure the target languages in the code.
+This script can translate phrases from English to any language supported by the Azure API. You can easily modify the target languages in the script to suit your needs.
 
 ## ⚙️ How to Run
 

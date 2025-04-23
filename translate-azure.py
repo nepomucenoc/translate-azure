@@ -2,7 +2,7 @@ import os
 import requests, uuid, json
 from dotenv import load_dotenv
 
-# Carrega as variáveis do .env
+# Load the variables from the .env file
 load_dotenv()
 
 key = os.getenv("KEY")
@@ -15,7 +15,7 @@ constructed_url = endpoint + path
 params = {
     'api-version': '3.0',
     'from': 'en',
-    'to': ['fr', 'zu'],
+    'to': ['fr', 'de', 'pt'],  # Changed to translate to French, German, and portuguese
 }
 
 headers = {
@@ -25,11 +25,13 @@ headers = {
     'X-ClientTraceId': str(uuid.uuid4()),
 }
 
+# Changed text to a more meaningful example
 body = [{
-    'text': 'I would really like to drive your car around the block a few times!'
+    'text': 'Translation is not just about words, it’s about conveying the true meaning across languages!'
 }]
 
 request = requests.post(constructed_url, params=params, headers=headers, json=body)
 response = request.json()
 
+# Print the translated result in a readable format
 print(json.dumps(response, sort_keys=True, ensure_ascii=False, indent=4, separators=(',', ': ')))
